@@ -145,7 +145,7 @@ module.exports = function(input, map) {
 
   var userOptions = assign(
     // user defaults
-    webpack.options.eslint || {},
+    webpack.query.eslint || {},
     // loader query string
     loaderUtils.getOptions(webpack)
   )
